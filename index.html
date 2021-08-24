@@ -5,7 +5,10 @@
 <meta charset="utf-8">
 <meta name = "viewport" content="width=device-width, initial-scale=1.0">
 <style>
-header{
+*{
+  box-sizing:border-box;
+}
+headerr{
   text-decoration:underline;
   text-align:center;
   padding: 30px;
@@ -13,35 +16,54 @@ header{
   color: black;
 }
 
-ul{
-  margin:20px;
+.header{
+  background-color: #9933cc;
+  color: #ffffff;
+  padding: 15px;
 }
 
 body{
-  background-color:rgb(0,255,255);
-  background-image:url('https://c.tenor.com/O1UiQ9DUVU8AAAAM/dancing-cat.gif');
+  background-image:url('https://www.tacer.biz/mm5/graphics/00000001/lit_dance_floor.2_700x700.jpg');
   background-repeat:no-repeat;
   background-attachment:fixed;
   background-position: 50% 50%;
-  background-size:50% 50%;
+  background-size:100% 100%;
 }
 
-@media(max-width: 600px){
-  nav, article{
-    width: 100%
-    height:auto;
-  }
+.row::after{
+  content:'';
+  clear:both;
+  display:table;
+}
+
+.menu li {
+  width:20%;
+  float:bottom;
+  font-size:50px;
+  list-style-type:none;
+  padding: 6px;
+  background-color: #33b5e5;
+  color: #ffffff;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
 }
 </style>
 </head>
 
 <body>
-  <ul>
-    <li><a href="index.html">Home Page</a></li>
-    <li><a href="aboutme.html">About Me</a></li>
-    <li><a href="portfolio.html">Portfolio</a></li>
-  </ul>
-  <h1><center>Ray's Home Page</center></h1>
+  <h1 class="header"><center>Ray's Home Page</center></h1>
+  <div class="col menu">
+    <ul>
+      <li><a href="index.html">HomePage</a></li>
+      <li><a href="aboutme.html">About Me</a></li>
+      <li><a href="portfolio.html">Portfolio</a></li>
+    </ul>
+  </div>
+  <br><br><br><br><br><br><br><br>
+  <center>
+  <img src="https://c.tenor.com/O1UiQ9DUVU8AAAAM/dancing-cat.gif" width="350"height="300">
+  <center>
 </body>
 
 </html>
