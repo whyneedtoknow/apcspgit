@@ -1,11 +1,16 @@
-<!-css stylesheet-->
+<!doctype html>
+<html lang = "en">
+<head>
+<title>Home Page</title>
+<meta charset="utf-8">
+<meta name = "viewport" content="width=device-width, initial-scale=1.0">
 <style>
 header{
   text-decoration:underline;
   text-align:center;
   padding: 30px;
   font-size:35px;
-  color: red;
+  color: black;
 }
 
 ul{
@@ -13,34 +18,30 @@ ul{
 }
 
 body{
-  
   background-color:rgb(0,255,255);
   background-image:url('https://c.tenor.com/O1UiQ9DUVU8AAAAM/dancing-cat.gif');
   background-repeat:no-repeat;
   background-attachment:fixed;
   background-position: 50% 50%;
-  background-size:50% 60%;
+  background-size:50% 50%;
+}
+
+@media(max-width: 600px){
+  nav, article{
+    width: 100%
+    height:auto;
+  }
 }
 </style>
-
-<!-html code starts here-->
-<!doctype html>
-<html lang="en">
-
-<head>
-  <meta charset="utf-8">
-  <title>Home Page</title>
 </head>
 
 <body>
   <ul>
-    <li><h1><a href="index.html">Home Page</a></li></h1>
-    <li><h1><a href="aboutme.html">About Me</a></li></h1>
-    <li><h1><a href="portfolio.html">Portfolio</a></li></h1>
+    <li><a href="index.html">Home Page</a></li>
+    <li><a href="aboutme.html">About Me</a></li>
+    <li><a href="portfolio.html">Portfolio</a></li>
   </ul>
-  <header>
-    Ray's Home Page
-  </header>
+  <h1><center>Ray's Home Page</center></h1>
 </body>
 
 </html>
