@@ -1,86 +1,26 @@
-<!doctype html>
-<html lang = "en">
+<!DOCTYPE html>
+<html>
+
 <head>
-<title>Home Page</title>
-<meta charset="utf-8">
-<meta name = "viewport" content="width=device-width, initial-scale=1.0">
-<style>
-*{
-  box-sizing:border-box;
-}
-headerr{
-  text-decoration:underline;
-  text-align:center;
-  padding: 30px;
-  font-size:35px;
-  color: black;
-}
-
-.header{
-  background-color: #9933cc;
-  color: #ffffff;
-  padding: 15px;
-}
-
-body{
-  background-image:url('https://www.tacer.biz/mm5/graphics/00000001/lit_dance_floor.2_700x700.jpg');
-  background-repeat:no-repeat;
-  background-attachment:fixed;
-  background-position: 50% 50%;
-  background-size:100% 100%;
-}
-
-.row::after{
-  content:'';
-  clear:both;
-  display:table;
-}
-
-.menu li {
-  width:20%;
-  float:bottom;
-  font-size:50px;
-  list-style-type:none;
-  padding: 6px;
-  background-color: #33b5e5;
-  color: #ffffff;
-  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
-}
-
-@keyframes cat-move{
-  0%   {left:0px; top:0px;}
-  25%  {left:200px; top:0px;}
-  50%  {left:200px; top:200px;}
-  75%  {left:0px; top:200px;}
-  100% {left:0px; top:0px;}
-}
-
-.animate{
-  position: relative;
-  animation-name:cat-move;
-  animation-duration: 3s;
-  animation-iteration-count:infinite;
-}
-</style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="refresh" content="30">
+  <link rel="stylesheet" href="style.css">
+  <title>Home Page</title>
 </head>
+<!--this is how you comment-->
 
 <body>
-  <h1 class="header"><center>Ray's Home Page</center></h1>
-  <div class="col menu">
-    <ul>
-      <li><a href="index.html">HomePage</a></li>
-      <li><a href="aboutme.html">About Me</a></li>
-      <li><a href="portfolio.html">Portfolio</a></li>
-    </ul>
+  <div class="topnav">
+    <a href="newIndex.html">Home</a>
+    <a href = "portfolio.html">Portfolio</a>
+    <a href = "aboutme.html">About Me</a>
+    <img src = "download.png" Align = "right" width = 50>
   </div>
-  <br><br>
-  <center>
-  <img class='animate' src="https://c.tenor.com/O1UiQ9DUVU8AAAAM/dancing-cat.gif" width="350"height="300">
-<br><br><br><br><br><br><br><br><br><br><br><br><br>
-<audio controls autoplay>
-<source src = "Lady Hear Me Tonight.mp3" type = "audio/mpeg">
-</audio>
-  <center>
+
+  <div class = "banner">
+    <h1>Welcome To My Page</h1>
+  </div>
 </body>
 
 </html>
